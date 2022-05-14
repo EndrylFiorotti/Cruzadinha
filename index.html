@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cruzadinha</title>
+</head>
+<body>
+    <table id="tabela">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="adressBus1" onkeyup="validarAdressBus()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="registradores1" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td><input type="text" id="RAM2" onkeyup="validarRAM()" maxlength="1"></td>
+            <td><input type="text" id="RAM3" onkeyup="validarRAM()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="adressBus2" onkeyup="validarAdressBus()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="registradores2" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="Flash1" onkeyup="validarFlash()" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="adressBus3" onkeyup="validarAdressBus()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="registradores3" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="CS1" onkeyup="validarCS()" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="Flash2" onkeyup="validarFlash()" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="quadCore1" onkeyup="validarQuadCore()" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="memoriaMassa1" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
+            <td><input type="text" id="adressBus4" onkeyup="validarAdressBus()" maxlength="1"></td>
+            <td><input type="text" id="memoriaMassa3" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
+            <td><input type="text" id="memoriaMassa4" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
+            <td><input type="text" id="memoriaMassa5" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
+            <td><input type="text" id="memoriaMassa6" onkeyup="validarRegistradores()"></td>
+            <td><input type="text" id="memoriaMassa7" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
+            <td><input type="text" id="memoriaMassa8" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
+            <td><input type="text" id="memoriaMassa9" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
+            <td><input type="text" id="memoriaMassa10" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
+            <td><input type="text" id="memoriaMassa11" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
+            <td><input type="text" id="memoriaMassa12" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="quadCore2" onkeyup="validarQuadCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="adressBus5" onkeyup="validarAdressBus()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="registradores5" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="Flash4" onkeyup="validarFlash()" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="dataBus1" onkeyup="validarDataBus()" maxlength="1"></td>
+            <td><input type="text" id="dataBus2" onkeyup="validarDataBus()" maxlength="1"></td>
+            <td><input type="text" id="dataBus3" onkeyup="validarDataBus()" maxlength="1"></td>
+            <td><input type="text" id="dataBus4" onkeyup="validarDataBus()" maxlength="1"></td>
+            <td><input type="text" id="dataBus5" onkeyup="validarDataBus()" maxlength="1"></td>
+            <td><input type="text" id="dataBus6" onkeyup="validarDataBus()" maxlength="1"></td>
+            <td><input type="text" id="adressBus6" onkeyup="validarAdressBus()" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="CPU1" onkeyup="validarCPU()" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="registradores6" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="Flash5" onkeyup="validarFlash()" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="dualCore2" onkeyup="validarDualCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="quadCore4" onkeyup="validarQuadCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="adressBus7" onkeyup="validarAdressBus()" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="CPU2" onkeyup="validarCPU()" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="registradores7" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="dualCore3" onkeyup="validarDualCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="quadCore5" onkeyup="validarQuadCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="adressBus8" onkeyup="validarAdressBus()" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="ULA1" onkeyup="validarULA()" maxlength="1"></td>
+            <td><input type="text" id="ULA2" onkeyup="validarULA()" maxlength="1"></td>
+            <td><input type="text" id="registradores8" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="dualCore4" onkeyup="validarDualCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="quadCore6" onkeyup="validarQuadCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="adressBus9" onkeyup="validarAdressBus()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="registradores9" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="dualCore5" onkeyup="validarDualCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="quadCore7" onkeyup="validarQuadCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="ROM1" onkeyup="validarROM()" maxlength="1"></td>
+            <td><input type="text" id="registradores10" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td><input type="text" id="ROM3" onkeyup="validarROM()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="dualCore6" onkeyup="validarDualCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="quadCore8" onkeyup="validarQuadCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="registradores11" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="DMA1" onkeyup="validarDMA()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="dualCore7" onkeyup="validarDualCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="registradores12" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td><input type="text" id="EPROM2" onkeyup="validarEprom()" maxlength="1"></td>
+            <td><input type="text" id="EPROM3" onkeyup="validarEprom()" maxlength="1"></td>
+            <td><input type="text" id="EPROM4" onkeyup="validarEprom()" maxlength="1"></td>
+            <td><input type="text" id="EPROM5" onkeyup="validarEprom()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="dualCore8" onkeyup="validarDualCore()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="registradores13" onkeyup="validarRegistradores()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="DMA3" onkeyup="validarDMA()" maxlength="1"></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
+<script src="./js/script.js"></script>
