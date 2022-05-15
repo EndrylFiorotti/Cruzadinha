@@ -5,11 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <script src="./js/modal.js"></script>
     <title>Cruzadinha</title>
 </head>
 <body>
+    <div id="bg"></div>
+    <div class="box">
+        <a href="#" id="close">X</a>
+        <span id="titulo"></span>
+        <hr>
+        <span id="texto"></span>
+    </div>
     <table id="tabela">
         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <button class="modalButton" onclick="adressBusModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868470.png?token=exp=1652631166~hmac=5faf4ef11bbffe212aeb2174be8f2e84" alt="">
+                </button>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <button class="modalButton" onclick="registradoresModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868470.png?token=exp=1652631166~hmac=5faf4ef11bbffe212aeb2174be8f2e84" alt="">
+                </button>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -19,16 +57,25 @@
             <td><input type="text" id="adressBus1" onkeyup="validarAdressBus()" maxlength="1"></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>
+                <button class="modalButton" onclick="RAMModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868472.png?token=exp=1652633691~hmac=2c764e834e75d03fa62fc7fbbcc045a6" alt="">
+                </button>
+            </td>
             <td><input type="text" id="registradores1" onkeyup="validarRegistradores()" maxlength="1"></td>
             <td><input type="text" id="RAM2" onkeyup="validarRAM()" maxlength="1"></td>
             <td><input type="text" id="RAM3" onkeyup="validarRAM()" maxlength="1"></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>
+                <button class="modalButton" onclick="flashModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868470.png?token=exp=1652631166~hmac=5faf4ef11bbffe212aeb2174be8f2e84" alt="">
+                </button>
+            </td>
         </tr>
         <tr>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -43,7 +90,11 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>
+                <button class="modalButton" onclick="CSModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868470.png?token=exp=1652631166~hmac=5faf4ef11bbffe212aeb2174be8f2e84" alt="">
+                </button>
+            </td>
             <td></td>
             <td><input type="text" id="Flash1" onkeyup="validarFlash()" maxlength="1"></td>
         </tr>
@@ -52,6 +103,11 @@
             <td></td>
             <td></td>
             <td></td>
+            <td>
+                <button class="modalButton" onclick="quadCoreModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868470.png?token=exp=1652631166~hmac=5faf4ef11bbffe212aeb2174be8f2e84" alt="">
+                </button>
+            </td>
             <td></td>
             <td></td>
             <td><input type="text" id="adressBus3" onkeyup="validarAdressBus()" maxlength="1"></td>
@@ -70,8 +126,13 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><input type="text" id="quadCore1" onkeyup="validarQuadCore()" maxlength="1"></td>
             <td></td>
+            <td><input type="text" id="quadCore1" onkeyup="validarQuadCore()" maxlength="1"></td>
+            <td>
+                <button class="modalButton" onclick="memoriaMassaModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868472.png?token=exp=1652633691~hmac=2c764e834e75d03fa62fc7fbbcc045a6" alt="">
+                </button>
+            </td>
             <td><input type="text" id="memoriaMassa1" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
             <td><input type="text" id="adressBus4" onkeyup="validarAdressBus()" maxlength="1"></td>
             <td><input type="text" id="memoriaMassa3" onkeyup="validarMemoriaMassa()" maxlength="1"></td>
@@ -87,6 +148,11 @@
         </tr>
         <tr>
             <td></td>
+            <td>
+                <button class="modalButton" onclick="dualCoreModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868470.png?token=exp=1652631166~hmac=5faf4ef11bbffe212aeb2174be8f2e84" alt="">
+                </button>
+            </td>
             <td></td>
             <td></td>
             <td><input type="text" id="quadCore2" onkeyup="validarQuadCore()" maxlength="1"></td>
@@ -94,7 +160,11 @@
             <td></td>
             <td><input type="text" id="adressBus5" onkeyup="validarAdressBus()" maxlength="1"></td>
             <td></td>
-            <td></td>
+            <td>
+                <button class="modalButton" onclick="CPUModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868470.png?token=exp=1652631166~hmac=5faf4ef11bbffe212aeb2174be8f2e84" alt="">
+                </button>
+            </td>
             <td></td>
             <td><input type="text" id="registradores5" onkeyup="validarRegistradores()" maxlength="1"></td>
             <td></td>
@@ -105,6 +175,11 @@
             <td><input type="text" id="Flash4" onkeyup="validarFlash()" maxlength="1"></td>
         </tr>
         <tr>
+            <td>
+                <button class="modalButton" onclick="dataBusModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868472.png?token=exp=1652633691~hmac=2c764e834e75d03fa62fc7fbbcc045a6" alt="">
+                </button>
+            </td>
             <td><input type="text" id="dataBus1" onkeyup="validarDataBus()" maxlength="1"></td>
             <td><input type="text" id="dataBus2" onkeyup="validarDataBus()" maxlength="1"></td>
             <td><input type="text" id="dataBus3" onkeyup="validarDataBus()" maxlength="1"></td>
@@ -124,6 +199,7 @@
             <td><input type="text" id="Flash5" onkeyup="validarFlash()" maxlength="1"></td>
         </tr>
         <tr>
+            <td></td>
             <td><input type="text" id="dualCore2" onkeyup="validarDualCore()" maxlength="1"></td>
             <td></td>
             <td></td>
@@ -143,6 +219,7 @@
             <td></td>
         </tr>
         <tr>
+            <td></td>
             <td><input type="text" id="dualCore3" onkeyup="validarDualCore()" maxlength="1"></td>
             <td></td>
             <td></td>
@@ -150,7 +227,11 @@
             <td></td>
             <td></td>
             <td><input type="text" id="adressBus8" onkeyup="validarAdressBus()" maxlength="1"></td>
-            <td></td>
+            <td>
+                <button class="modalButton" onclick="ULAModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868472.png?token=exp=1652633691~hmac=2c764e834e75d03fa62fc7fbbcc045a6" alt="">
+                </button>
+            </td>
             <td><input type="text" id="ULA1" onkeyup="validarULA()" maxlength="1"></td>
             <td><input type="text" id="ULA2" onkeyup="validarULA()" maxlength="1"></td>
             <td><input type="text" id="registradores8" onkeyup="validarRegistradores()" maxlength="1"></td>
@@ -162,6 +243,7 @@
             <td></td>
         </tr>
         <tr>
+            <td></td>
             <td><input type="text" id="dualCore4" onkeyup="validarDualCore()" maxlength="1"></td>
             <td></td>
             <td></td>
@@ -181,6 +263,7 @@
             <td></td>
         </tr>
         <tr>
+            <td></td>
             <td><input type="text" id="dualCore5" onkeyup="validarDualCore()" maxlength="1"></td>
             <td></td>
             <td></td>
@@ -189,17 +272,26 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>
+                <button class="modalButton" onclick="ROMModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868472.png?token=exp=1652633691~hmac=2c764e834e75d03fa62fc7fbbcc045a6" alt="">
+                </button>
+            </td>
             <td><input type="text" id="ROM1" onkeyup="validarROM()" maxlength="1"></td>
             <td><input type="text" id="registradores10" onkeyup="validarRegistradores()" maxlength="1"></td>
             <td><input type="text" id="ROM3" onkeyup="validarROM()" maxlength="1"></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>
+                <button class="modalButton" onclick="DMAModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868470.png?token=exp=1652631166~hmac=5faf4ef11bbffe212aeb2174be8f2e84" alt="">
+                </button>
+            </td>
             <td></td>
             <td></td>
         </tr>
         <tr>
+            <td></td>
             <td><input type="text" id="dualCore6" onkeyup="validarDualCore()" maxlength="1"></td>
             <td></td>
             <td></td>
@@ -219,6 +311,7 @@
             <td></td>
         </tr>
         <tr>
+            <td></td>
             <td><input type="text" id="dualCore7" onkeyup="validarDualCore()" maxlength="1"></td>
             <td></td>
             <td></td>
@@ -228,7 +321,11 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>
+                <button class="modalButton" onclick="EpromModal()">
+                    <img class="imagemDica" src="https://cdn-icons.flaticon.com/png/512/5868/premium/5868472.png?token=exp=1652633691~hmac=2c764e834e75d03fa62fc7fbbcc045a6" alt="">
+                </button>
+            </td>
             <td><input type="text" id="registradores12" onkeyup="validarRegistradores()" maxlength="1"></td>
             <td><input type="text" id="EPROM2" onkeyup="validarEprom()" maxlength="1"></td>
             <td><input type="text" id="EPROM3" onkeyup="validarEprom()" maxlength="1"></td>
@@ -238,6 +335,7 @@
             <td></td>
         </tr>
         <tr>
+            <td></td>
             <td><input type="text" id="dualCore8" onkeyup="validarDualCore()" maxlength="1"></td>
             <td></td>
             <td></td>

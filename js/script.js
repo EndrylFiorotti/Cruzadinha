@@ -4,11 +4,11 @@ function validarAdressBus() {
     var PalavraAdressBus = Array(adressBus1.value.toLowerCase(), adressBus2.value.toLowerCase(), adressBus3.value.toLowerCase(), adressBus4.value.toLowerCase(),
         adressBus5.value.toLowerCase(), adressBus6.value.toLowerCase(), adressBus7.value.toLowerCase(), adressBus8.value.toLowerCase(), adressBus9.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra1.length; contador1++ ){
-        if ( PalavraAdressBus[contador1-1] != Palavra1[contador1-1] ) {
-            document.getElementById(`adressBus${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+    for ( var i = 1; i <= Palavra1.length; i++ ){
+        if ( PalavraAdressBus[i-1] != Palavra1[i-1] ) {
+            document.getElementById(`adressBus${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
         } else {
-            document.getElementById(`adressBus${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+            document.getElementById(`adressBus${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
         }
     }
 }
@@ -20,18 +20,18 @@ function validarRegistradores() {
         registradores5.value.toLowerCase(), registradores6.value.toLowerCase(), registradores7.value.toLowerCase(), registradores8.value.toLowerCase(), registradores9.value.toLowerCase(),
         registradores10.value.toLowerCase(), registradores11.value.toLowerCase(), registradores12.value.toLowerCase(), registradores13.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra2.length; contador1++ ){
-        if ( PalavraRegistradores[contador1-1] != Palavra2[contador1-1] ) {
-            if ( contador1 == 4 ) {
+    for ( var i = 1; i <= Palavra2.length; i++ ){
+        if ( PalavraRegistradores[i-1] != Palavra2[i-1] ) {
+            if ( i == 4 ) {
                 document.getElementById(`memoriaMassa6`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`registradores${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`registradores${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 4 ) {
+            if ( i == 4 ) {
                 document.getElementById(`memoriaMassa6`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`registradores${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`registradores${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -44,18 +44,18 @@ function validarMemoriaMassa() {
         memoriaMassa5.value.toLowerCase(), memoriaMassa6.value.toLowerCase(), memoriaMassa7.value.toLowerCase(), memoriaMassa8.value.toLowerCase(), memoriaMassa9.value.toLowerCase(),
         memoriaMassa10.value.toLowerCase(), memoriaMassa11.value.toLowerCase(), memoriaMassa12.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra3.length; contador1++ ){
-        if ( PalavraMemoriaMassa[contador1-1] != Palavra3[contador1-1] ) {
-            if ( contador1 == 2 ) {
+    for ( var i = 1; i <= Palavra3.length; i++ ){
+        if ( PalavraMemoriaMassa[i-1] != Palavra3[i-1] ) {
+            if ( i == 2 ) {
                 document.getElementById(`adressBus4`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`memoriaMassa${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`memoriaMassa${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 2 ) {
+            if ( i == 2 ) {
                 document.getElementById(`adressBus4`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`memoriaMassa${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`memoriaMassa${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -66,18 +66,18 @@ function validarRAM() {
     var Palavra4 = "ram"
     var PalavraRAM = Array(registradores1.value.toLowerCase(), RAM2.value.toLowerCase(), RAM3.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra4.length; contador1++ ){
-        if ( PalavraRAM[contador1-1] != Palavra4[contador1-1] ) {
-            if ( contador1 == 1 ) {
+    for ( var i = 1; i <= Palavra4.length; i++ ){
+        if ( PalavraRAM[i-1] != Palavra4[i-1] ) {
+            if ( i == 1 ) {
                 document.getElementById(`registradores1`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`RAM${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`RAM${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 1 ) {
+            if ( i == 1 ) {
                 document.getElementById(`registradores1`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`RAM${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`RAM${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -88,18 +88,18 @@ function validarCS() {
     var Palavra5 = "cs"
     var PalavraCS = Array(CS1.value.toLowerCase(), memoriaMassa10.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra5.length; contador1++ ){
-        if ( PalavraCS[contador1-1] != Palavra5[contador1-1] ) {
-            if ( contador1 == 2 ) {
+    for ( var i = 1; i <= Palavra5.length; i++ ){
+        if ( PalavraCS[i-1] != Palavra5[i-1] ) {
+            if ( i == 2 ) {
                 document.getElementById(`memoriaMassa10`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`CS${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`CS${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 2 ) {
+            if ( i == 2 ) {
                 document.getElementById(`memoriaMassa10`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`CS${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`CS${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -110,18 +110,18 @@ function validarFlash() {
     var Palavra6 = "flash"
     var PalavraFlash = Array(Flash1.value.toLowerCase(), Flash2.value.toLowerCase(), memoriaMassa12.value.toLowerCase(), Flash4.value.toLowerCase(), Flash5.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra6.length; contador1++ ){
-        if ( PalavraFlash[contador1-1] != Palavra6[contador1-1] ) {
-            if ( contador1 == 3 ) {
+    for ( var i = 1; i <= Palavra6.length; i++ ){
+        if ( PalavraFlash[i-1] != Palavra6[i-1] ) {
+            if ( i == 3 ) {
                 document.getElementById(`memoriaMassa12`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`Flash${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`Flash${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 3 ) {
+            if ( i == 3 ) {
                 document.getElementById(`memoriaMassa12`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`Flash${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`Flash${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -132,18 +132,18 @@ function validarULA() {
     var Palavra7 = "ula"
     var PalavraULA = Array(ULA1.value.toLowerCase(), ULA2.value.toLowerCase(), registradores8.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra7.length; contador1++ ){
-        if ( PalavraULA[contador1-1] != Palavra7[contador1-1] ) {
-            if ( contador1 == 3 ) {
+    for ( var i = 1; i <= Palavra7.length; i++ ){
+        if ( PalavraULA[i-1] != Palavra7[i-1] ) {
+            if ( i == 3 ) {
                 document.getElementById(`registradores8`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`ULA${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`ULA${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 3 ) {
+            if ( i == 3 ) {
                 document.getElementById(`registradores8`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`ULA${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`ULA${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -154,18 +154,18 @@ function validarCPU() {
     var Palavra8 = "cpu"
     var PalavraCPU = Array(CPU1.value.toLowerCase(), CPU2.value.toLowerCase(), ULA1.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra8.length; contador1++ ){
-        if ( PalavraCPU[contador1-1] != Palavra8[contador1-1] ) {
-            if ( contador1 == 3 ) {
+    for ( var i = 1; i <= Palavra8.length; i++ ){
+        if ( PalavraCPU[i-1] != Palavra8[i-1] ) {
+            if ( i == 3 ) {
                 document.getElementById(`ULA1`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`CPU${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`CPU${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 3 ) {
+            if ( i == 3 ) {
                 document.getElementById(`ULA1`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`CPU${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`CPU${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -176,18 +176,18 @@ function validarROM() {
     var Palavra9 = "rom"
     var PalavraROM = Array(ROM1.value.toLowerCase(), registradores10.value.toLowerCase(), ROM3.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra9.length; contador1++ ){
-        if ( PalavraROM[contador1-1] != Palavra9[contador1-1] ) {
-            if ( contador1 == 2 ) {
+    for ( var i = 1; i <= Palavra9.length; i++ ){
+        if ( PalavraROM[i-1] != Palavra9[i-1] ) {
+            if ( i == 2 ) {
                 document.getElementById(`registradores10`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`ROM${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`ROM${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 2 ) {
+            if ( i == 2 ) {
                 document.getElementById(`registradores10`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`ROM${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`ROM${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -199,18 +199,18 @@ function validarEprom() {
     var PalavraEprom = Array(registradores12.value.toLowerCase(), EPROM2.value.toLowerCase(), EPROM3.value.toLowerCase(), 
     EPROM4.value.toLowerCase(), EPROM5.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra10.length; contador1++ ){
-        if ( PalavraEprom[contador1-1] != Palavra10[contador1-1] ) {
-            if ( contador1 == 1 ) {
+    for ( var i = 1; i <= Palavra10.length; i++ ){
+        if ( PalavraEprom[i-1] != Palavra10[i-1] ) {
+            if ( i == 1 ) {
                 document.getElementById(`registradores12`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`EPROM${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`EPROM${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 1 ) {
+            if ( i == 1 ) {
                 document.getElementById(`registradores12`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`EPROM${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`EPROM${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -221,18 +221,18 @@ function validarDMA() {
     var Palavra11 = "dma"
     var PalavraDMA = Array(DMA1.value.toLowerCase(), EPROM5.value.toLowerCase(), DMA3.value.toLowerCase(), )
 
-    for ( var contador1 = 1; contador1 <= Palavra11.length; contador1++ ){
-        if ( PalavraDMA[contador1-1] != Palavra11[contador1-1] ) {
-            if ( contador1 == 2 ) {
+    for ( var i = 1; i <= Palavra11.length; i++ ){
+        if ( PalavraDMA[i-1] != Palavra11[i-1] ) {
+            if ( i == 2 ) {
                 document.getElementById(`EPROM5`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`DMA${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`DMA${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 2 ) {
+            if ( i == 2 ) {
                 document.getElementById(`EPROM5`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`DMA${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`DMA${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -244,18 +244,18 @@ function validarDataBus() {
     var PalavraDataBus = Array(dataBus1.value.toLowerCase(), dataBus2.value.toLowerCase(), dataBus3.value.toLowerCase(),
     dataBus4.value.toLowerCase(), dataBus5.value.toLowerCase(), dataBus6.value.toLowerCase(), adressBus6.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra12.length; contador1++ ){
-        if ( PalavraDataBus[contador1-1] != Palavra12[contador1-1] ) {
-            if ( contador1 == 7 ) {
+    for ( var i = 1; i <= Palavra12.length; i++ ){
+        if ( PalavraDataBus[i-1] != Palavra12[i-1] ) {
+            if ( i == 7 ) {
                 document.getElementById(`adressBus6`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`dataBus${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`dataBus${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 7 ) {
+            if ( i == 7 ) {
                 document.getElementById(`adressBus6`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`dataBus${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`dataBus${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -267,18 +267,18 @@ function validarDualCore() {
     var PalavraDualCore = Array(dataBus1.value.toLowerCase(), dualCore2.value.toLowerCase(), dualCore3.value.toLowerCase(),
     dualCore4.value.toLowerCase(), dualCore5.value.toLowerCase(), dualCore6.value.toLowerCase(), dualCore7.value.toLowerCase(), dualCore8.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra13.length; contador1++ ){
-        if ( PalavraDualCore[contador1-1] != Palavra13[contador1-1] ) {
-            if ( contador1 == 1 ) {
+    for ( var i = 1; i <= Palavra13.length; i++ ){
+        if ( PalavraDualCore[i-1] != Palavra13[i-1] ) {
+            if ( i == 1 ) {
                 document.getElementById(`dataBus1`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`dualCore${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`dualCore${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 1 ) {
+            if ( i == 1 ) {
                 document.getElementById(`dataBus1`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`dualCore${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`dualCore${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
@@ -290,18 +290,18 @@ function validarQuadCore() {
     var PalavraQuadCore = Array(quadCore1.value.toLowerCase(), quadCore2.value.toLowerCase(), dataBus4.value.toLowerCase(),
     quadCore4.value.toLowerCase(), quadCore5.value.toLowerCase(), quadCore6.value.toLowerCase(), quadCore7.value.toLowerCase(), quadCore8.value.toLowerCase())
 
-    for ( var contador1 = 1; contador1 <= Palavra14.length; contador1++ ){
-        if ( PalavraQuadCore[contador1-1] != Palavra14[contador1-1] ) {
-            if ( contador1 == 3 ) {
+    for ( var i = 1; i <= Palavra14.length; i++ ){
+        if ( PalavraQuadCore[i-1] != Palavra14[i-1] ) {
+            if ( i == 3 ) {
                 document.getElementById(`dataBus4`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             } else {
-                document.getElementById(`quadCore${contador1}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
+                document.getElementById(`quadCore${i}`).style.backgroundColor = "rgb( 255, 0, 0, 0.5 )"
             }
         } else {
-            if ( contador1 == 3 ) {
+            if ( i == 3 ) {
                 document.getElementById(`dataBus4`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             } else {
-                document.getElementById(`quadCore${contador1}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
+                document.getElementById(`quadCore${i}`).style.backgroundColor = "rgb( 0, 255, 0, 0.5 )"
             }
         }
     }
